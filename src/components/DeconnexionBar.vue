@@ -1,7 +1,7 @@
 <script>
     export default
     {
-        name: "NavBar"
+        name: "DeconnexionBar"
     }
 </script>
 
@@ -15,14 +15,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav nav-links"> 
+              <li class="nav-item"> 
               <li class="nav-item">
-                <router-link to="inscription/etape-1" class="mx-2 text-decoration-none btn navbtn">
-                    INSCRIPTION
-                </router-link>
-              </li>
-              <li class="nav-item">
-                  <router-link to="/connexion" class="mx-2 text-decoration-none btn navbtn navbtn-outlined">
-                      CONNEXION
+                  <router-link to="/connexion" class=" mx-2 text-decoration-none btn rounded text-white btndec">
+                      DECONNEXION
                   </router-link>
               </li> 
           </ul>
@@ -31,28 +27,9 @@
 </template>
 
 <style scoped>
-    .navbtn
+    .btndec
     {
-        background-color: #6659FE;
-        color: white;
-        font-weight: 900;
-    }
-    .navbtn-outlined
-    {
-        background-color: white;
-        color: #6659FE;
-        border: 2px solid #6659FE;
-    }
-    .navbtn:hover
-    {
-        background-color: white;
-        color: #6659FE;
-        border: 2px solid #6659FE;
-    }
-    .navbtn-outlined:hover
-    {
-        background-color: #6659FE;
-        color: white;
+        background: #6659FE;
         font-weight: 900;
     }
 </style>
