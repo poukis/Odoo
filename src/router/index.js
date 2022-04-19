@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue' 
+//import HomeView from '../views/HomeView.vue' 
 // Importatiion du register1View
 import Register1View from '../views/Register1View'
 
@@ -16,7 +16,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: Register1View
   },
   // Ajout de la route liée au registers View
   {

@@ -7,6 +7,7 @@
 
 <template>
     <optgroup>
+        <option value = "" hidden disabled selected>Pays</option>
         <option value="afghanistan">Afghanistan</option>
         <option value="afrique-du-sud">Afrique du Sud</option>
         <option value="albanie">Albanie</option>
