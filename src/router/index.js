@@ -10,6 +10,8 @@ import AccountView from '../views/AccountView'
 // Importation de connexionView
 import ConnexionView from '../views/ConnexionView'
 
+import Update1View from '../views/Update1View'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -18,7 +20,7 @@ const routes = [
     name: 'home',
     component: Register1View
   },
-  // Ajout de la route liée au registers View
+  // Ajout de la route liée au register?View
   {
     path: '/inscription/etape-1',
     name: 'inscription1',
@@ -36,13 +38,10 @@ const routes = [
     component: ConnexionView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/update/etape-1',
+    name: 'update1',
+    component: Update1View
+  } 
 ]
 
 const router = new VueRouter(

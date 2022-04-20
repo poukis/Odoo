@@ -14,12 +14,21 @@
     <div>
         <DeconnexionBar />
     <div class="account-box mb-5">
-        <h4 class="text-center  fw-bolder w-100 account-title">
-            DÉTAILS DE L'ENTREPRISE
-        </h4>
+        <div class="d-sm-flex p-3 justify-content-between">
+            <div class="">
+                <h4 class="fw-bolder float-left account-title">
+                    DÉTAILS DE L'ENTREPRISE
+                </h4> 
+            </div>
+            <div class="">
+                <router-link to="/update/etape-1" class="float-right btn btn-dark fw-bolder">Modifier</router-link>
+            </div>
+             
+        </div>
+        
         <div class="container-fluid">
              <div class="row rounded mx-sm-3" style="border: 1px solid silver;">
-                <h5 class="container-fluid text-center box-title p-2">
+                <h5 class="container-fluid text-white text-center box-title p-2">
                     Informations générales de l'entreprise
                 </h5>
                 <div class="col-sm-2">
@@ -32,7 +41,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                         <div class="input-group mb-3 p-1">
-                            <span class="input-group-text input-header" id="basic-addon1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1" >
                                 Email
                             </span>
                             <input type="text" readonly class="bg-white form-control inputfield" placeholder="XXXX@gmail.com" aria-label="Email r" ariainput-headeredby="basic-addon1">
@@ -40,7 +49,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group mb-3 p-1">
-                                <span class="input-group-text input-header" id="basic-addon1">
+                                <span class="input-group-text input-header col-sm-5" id="basic-addon1">
                                     Date de création
                                 </span>
                                 <input type="text" readonly class="bg-white  form-control inputfield" placeholder="22/04/2004" aria-label="Email r" ariainput-headeredby="basic-addon1">
@@ -51,7 +60,7 @@
                     <div class="row">
                         <div class="col-sm-6">
                         <div class="input-group mb-3 p-1">
-                            <span class="input-group-text input-header" id="basic-addon1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
                                 Pays
                             </span>
                             <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXXX" aria-label="Email r" ariainput-headeredby="basic-addon1">
@@ -59,7 +68,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="input-group mb-3 p-1">
-                                <span class="input-group-text input-header" id="basic-addon1">
+                                <span class="input-group-text input-header col-sm-5" id="basic-addon1">
                                     Nombre d'employées
                                 </span>
                                 <input type="text" readonly class="bg-white  form-control inputfield" placeholder="24486481961" aria-label="Email r" ariainput-headeredby="basic-addon1">
@@ -92,7 +101,7 @@
 
         <div class="container-fluid mt-3">
              <div class="row rounded mx-sm-3" style="border: 1px solid silver;">
-                <h5 class="container-fluid text-center box-title p-2">
+                <h5 class="container-fluid text-white text-center box-title p-2">
                     Informations financières de l'entreprise
                 </h5>
 
@@ -103,7 +112,7 @@
                             <thead style="">
                                 <th>Nom</th>
                                 <th>Position</th>
-                                <th>Url</th>
+                                <th>Profil LinkedIn</th>
                             </thead>
                             <tbody>
                                 <tr style="height: 17vh;">
@@ -123,7 +132,7 @@
                             <thead style="">
                                 <th>Nom</th>
                                 <th>Position</th>
-                                <th>Url</th>
+                                <th>Profil LinkedIn</th>
                             </thead>
                             <tbody>
                                 <tr style="height: 8vh;">
@@ -188,6 +197,85 @@
              </div>
         </div>
     </div>
+    <div class="container-fluid">
+             <div class="row rounded mx-sm-3" style="border: 1px solid silver;">
+                <h5 class="container-fluid text-white text-center box-title p-2">
+                    Informations de connexion de l'entreprise
+                </h5> 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Username
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXXXX" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Email de récupération
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXX@gmail.com" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                        <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Email de récupération
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXX@gmail.com" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div> 
+                </div>
+             </div>
+    </div>
+
+    <div class="container-fluid my-4">
+             <div class="row rounded mx-sm-3" style="border: 1px solid silver;">
+                <h5 class="container-fluid text-white text-center box-title p-2">
+                    Informations des réseaux sociaux de l'entreprise
+                </h5> 
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Url de facebook
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXXXX" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Url de twitter
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXXXX" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Url d'Instagram
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXXXX" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div> 
+                    <div class="col-sm-6">
+                        <div class="input-group mb-3 p-1">
+                            <span class="input-group-text input-header col-sm-5" id="basic-addon1">
+                                Url de LinkedIn
+                            </span>
+                            <input type="text" readonly class="bg-white  form-control inputfield" placeholder="XXXXXXXXXXX" aria-label="Email r" ariainput-headeredby="basic-addon1">
+                        </div>
+                    </div> 
+                </div>
+             </div>
+    </div>
          </div>
 </template>
     
@@ -226,7 +314,7 @@
     }
     .box-title
     {
-        background-color: #9EAEFF;
+        background-color: #475EDC;
         font-weight: 900;
     }
     .input-header
@@ -236,6 +324,10 @@
     } 
     .input-header , th
     {
-        background-color: #D4DAFD;
+        background-color: #E3E3E3;
+    }
+    input
+    {
+        text-align: center;
     }
 </style>

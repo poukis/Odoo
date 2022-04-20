@@ -32,7 +32,13 @@ export default new Vuex.Store({
         facebook_url: "",
         twitter_url: "",
         instagram_url: "",
-        linkedin_url: ""
+        linkedin_url: "",
+        connexion_datas:
+        {
+          username: "",
+          password: "",
+          save_email: ""
+        }
     }
   },
   getters: {
